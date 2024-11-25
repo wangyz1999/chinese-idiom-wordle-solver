@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chinese Idiom Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Chinese Idiom Solver</h1>
+    <div class="container">
+        <div class="input-section">
+            <h2>Search Criteria</h2>
+            <div class="grid-container">
+                <!-- Character Positions -->
+                <div class="character-frame" id="char0">
+                    <h3>Character 1</h3>
+                    <label>Initial:</label>
+                    <input type="text" id="prefix_0">
+                    <label>Final:</label>
+                    <input type="text" id="suffix_0">
+                    <label>Tone:</label>
+                    <input type="number" id="tone_0" min="1" max="5">
+                    <label>Character:</label>
+                    <input type="text" id="char_0">
+                </div>
+                <div class="character-frame" id="char1">
+                    <h3>Character 2</h3>
+                    <label>Initial:</label>
+                    <input type="text" id="prefix_1">
+                    <label>Final:</label>
+                    <input type="text" id="suffix_1">
+                    <label>Tone:</label>
+                    <input type="number" id="tone_1" min="1" max="5">
+                    <label>Character:</label>
+                    <input type="text" id="char_1">
+                </div>
+                <div class="character-frame" id="char2">
+                    <h3>Character 3</h3>
+                    <label>Initial:</label>
+                    <input type="text" id="prefix_2">
+                    <label>Final:</label>
+                    <input type="text" id="suffix_2">
+                    <label>Tone:</label>
+                    <input type="number" id="tone_2" min="1" max="5">
+                    <label>Character:</label>
+                    <input type="text" id="char_2">
+                </div>
+                <div class="character-frame" id="char3">
+                    <h3>Character 4</h3>
+                    <label>Initial:</label>
+                    <input type="text" id="prefix_3">
+                    <label>Final:</label>
+                    <input type="text" id="suffix_3">
+                    <label>Tone:</label>
+                    <input type="number" id="tone_3" min="1" max="5">
+                    <label>Character:</label>
+                    <input type="text" id="char_3">
+                </div>
+            </div>
+
+            <!-- Exclusions -->
+            <div class="exclusion-frame">
+                <h3>Exclusions</h3>
+                <label>Exclude Initials (comma-separated):</label>
+                <input type="text" id="exclude_initials">
+                <label>Exclude Finals (comma-separated):</label>
+                <input type="text" id="exclude_suffixs">
+                <label>Exclude Tones (comma-separated):</label>
+                <input type="text" id="exclude_tones">
+            </div>
+
+            <!-- Inclusions -->
+            <div class="inclusion-frame">
+                <h3>Inclusions (Must Appear Somewhere)</h3>
+                <label>Include Initials (comma-separated):</label>
+                <input type="text" id="include_initials">
+                <label>Include Finals (comma-separated):</label>
+                <input type="text" id="include_suffixs">
+                <label>Include Tones (comma-separated):</label>
+                <input type="text" id="include_tones">
+                <label>Include Characters (comma-separated):</label>
+                <input type="text" id="include_char">
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-frame">
+                <button id="searchBtn">Search</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="output-section">
+            <h2>Results</h2>
+            <textarea id="resultText" readonly></textarea>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

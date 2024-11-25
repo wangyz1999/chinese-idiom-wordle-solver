@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #35424a;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input-section, .output-section {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px;
+}
+
+h2 {
+    color: #35424a;
+    border-bottom: 2px solid #e8491d;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.character-frame, .exclusion-frame, .inclusion-frame {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.character-frame h3 {
+    margin-top: 0;
+}
+
+.character-frame label, .exclusion-frame label, .inclusion-frame label {
+    display: block;
+    margin-top: 5px;
+}
+
+.character-frame input, .exclusion-frame input, .inclusion-frame input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.button-frame {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.button-frame button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #35424a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button-frame button:hover {
+    background-color: #e8491d;
+}
+
+.output-section textarea {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    resize: none;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
